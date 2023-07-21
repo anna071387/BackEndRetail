@@ -1,6 +1,6 @@
 # BackEndRetail-E
 
-![alt text](./assets/Screenshot1.png)
+![alt text](./Assets/Screenshot1.png)
 
 
 https://github.com/anna071387/BackEndRetail
