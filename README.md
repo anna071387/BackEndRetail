@@ -1,11 +1,12 @@
 # BackEndRetail-E
 
-![alt text](./assets/Screenshot1-01.png)
+![alt text](./assets/Screenshot1.png)
 
 
 https://github.com/anna071387/BackEndRetail
 
-https://drive.google.com/file/d/1SuwxLCf_eF1vhY-crWai5HEm176PJoFh/view?usp=sharing
+https://drive.google.com/drive/folders/1tC2Ha_jqsPkTH9t2D8AhMOulyInasLZI?usp=sharing
+
 
 ## Description
 
