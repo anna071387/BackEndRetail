@@ -57,11 +57,25 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
+  Category.update(req.body, {
+    where: {
+      id: req.params.id,
+    },
+  })
+  .then((response) => {
+res.json(response)
+// return Category.findByPk(req.params.id, {
+//   include:  [{ model: Product }]
+})
+  .catch((err) => {
+  res.json(err)
+  });
+});
  
     // find the category
     // update the field of the category _name
 
-});
+
 
 
 // ---------------------------------------------------------------------------
