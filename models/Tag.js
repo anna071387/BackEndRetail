@@ -7,15 +7,15 @@ class Tag extends Model {}
 // CREATE TABLE ALTERNATIVE
 Tag.init(
   {
-    // define columns
+    //Creates columns in table Tag
     id: {
       type: DataTypes.INTEGER,
-      notNull: true,
+      allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     tag_name: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
     },
   },
   {

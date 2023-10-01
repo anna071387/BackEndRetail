@@ -3,7 +3,7 @@ require('dotenv').config();
 const Sequelize = require('sequelize');
 
 const sequelize = process.env.JAWSDB_URL
-// ? : is 
+// Ternary operator
   ? new Sequelize(process.env.JAWSDB_URL)
   : new Sequelize(
     process.env.DB_NAME, 
@@ -13,7 +13,6 @@ const sequelize = process.env.JAWSDB_URL
       host: '127.0.0.1',
       dialect: 'mysql',
 
-      // ASK QUESTION ABOUT THIS
       dialectOptions: {
         decimalNumbers: true,
       },
