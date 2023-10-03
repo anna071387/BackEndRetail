@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-// const { DECIMAL } = require('sequelize');
+
 class Product extends Model {}
 
 Product.init(

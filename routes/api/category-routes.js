@@ -4,23 +4,24 @@ const { Category, Product } = require('../../models');
 router.get('/', (req, res) => {
   // find all categories
   Category.findAll({
-     //  includes its associated Products
-      attributes: ["id", "catefory_name"],
-      include: [{ model: Product,
-      attributes: ["id", "product_name", "price", "stock", "category_id" ],
-      }],
-    })
+     //  includes its associated Product
+      include: [{ model: Product ,
+      attributes: ["id", "product_name", "price", "stock", "category_id"],
+      }
+    ]
+  })
 .then ((data) => {
   res.json(data);
 })
 .catch((error) => {
-  res.status(400).json(error);
+  console.log(error);
+  res.status(500).json(error);
 });
 }); 
 
 router.get('/:id', (req, res) => {
   // find one category by id 
-Catetory.findOne({
+Category.findOne({
   where: {id:req.params.id,
   },
   attributes: ["id", "category_name"],
@@ -45,7 +46,8 @@ Category.create({category_name: req.body.category_name})
 .then((data) => {
   res.json(data);
 }) .catch((error) => {
-  res.status(400).json(err);
+  console.log(error);
+  res.status(400).json(error);
 });
 });
 
